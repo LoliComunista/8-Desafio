@@ -1,0 +1,21 @@
+package projetoconversormaiusculo;
+
+import java.util.Scanner;
+
+public class ProjetoConversorMaiusculo {
+
+    public static void main(String[] args) {
+        //variavel
+        Scanner ler=new Scanner(System.in);
+        String string;
+        //dados
+        System.out.println("Insira uma string");
+        string=ler.next();
+        convertarMaiusculaEConta(string);
+    }
+    public static void convertarMaiusculaEConta(String string){
+        System.out.println(string.toUpperCase());
+            System.out.println("Quantidade de letras: "+string.length());
+        
+    }
+}
