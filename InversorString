@@ -1,0 +1,24 @@
+package javaapplication133;
+
+import java.util.Scanner;
+
+public class JavaApplication133 {
+
+    public static void main(String[] args) {
+        //variavel
+        Scanner ler = new Scanner(System.in);
+        String strin, invertio;
+        
+        //dado
+        System.out.println("Insira a string");
+        strin=ler.next();
+        
+        //saida
+        System.out.println(inverterTexto(strin));
+    }
+    public static String inverterTexto(String string){
+    return new StringBuilder(string).reverse().toString();
+        
+    }
+    
+}
