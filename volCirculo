@@ -1,0 +1,29 @@
+package acirculo;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+
+public class ACirculo {
+
+    public static void main(String[] args) {
+         //variavel
+        DecimalFormat decimal=new DecimalFormat("0.00");
+        Scanner ler=new Scanner(System.in);
+        double raio, volume;
+        
+        //dados
+        System.out.println("Insira o raio do circulo:");
+        raio=ler.nextDouble();
+        
+        //processo
+        volume=calcularVolume(raio);
+        //saida
+        System.out.println("Area do Circulo: "+decimal.format(volume));
+    }
+    public static double calcularVolume (double raio){
+    return (4/3)*Math.PI*Math.pow(raio,3);
+    }
+    
+    
+}
