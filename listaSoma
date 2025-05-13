@@ -1,0 +1,30 @@
+package somarlista;
+
+import java.util.Scanner;
+
+public class SomarLista {
+
+    public static void main(String[] args) {
+        //variave
+        Scanner ler = new Scanner(System.in);
+        int qnt;
+        //dados
+        System.out.println("inira a quantidade");
+        qnt = ler.nextInt();
+        
+        //saida
+        somarLista(qnt);
+    }
+
+    public static void somarLista(int quant) {
+        Scanner ler = new Scanner(System.in);
+        int i, n, soma = 0;
+        for (i = 0; i < quant; i++) {
+            System.out.println("insira um número para somar");
+            n = ler.nextInt();
+            soma += n;
+        }
+        System.out.println("Soma dos números: "+soma);
+    }
+
+}
